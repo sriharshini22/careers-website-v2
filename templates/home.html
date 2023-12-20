@@ -1,49 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      HBQ Careers 
-    </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <style>
-      #banner{
-        object-fit:cover;
-        height:360px;
-        width:100%;
-        margin-bottom:16px;  
-      }
-    </style>
-  </head>
-  <body>
-    {% include 'nav.html' %}
-    <img class="img-fluid" id="banner" src= "https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <div class= "container"> <br>
-   <h1 class="text-center mt-2 mb-4">HBQ Careers</h1>
+
+<head>
+  <title>
+    HBQ Careers
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    #banner {
+      object-fit: cover;
+      height: 360px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'nav.html' %}
+  <img class="img-fluid" id="banner"
+    src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+  <div class="container"> <br>
+    <h1 class="text-center mt-2 mb-4">HBQ Careers</h1>
     <div class="row" style="margin-bottom:16px">
       <div class=col-md-7>
-    <p class="lead">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus. Placerat orci nulla pellentesque dignissim. Massa tincidunt nunc pulvinar sapien. Ipsum suspendisse ultrices gravida dictum fusce ut. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Turpis egestas integer eget aliquet nibh praesent tristique. 
-  </p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In mollis nunc sed id semper risus. Placerat orci nulla pellentesque dignissim. Massa tincidunt
+          nunc pulvinar sapien. Ipsum suspendisse ultrices gravida dictum fusce ut. Phasellus egestas tellus rutrum
+          tellus pellentesque eu tincidunt. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim.
+          Turpis egestas integer eget aliquet nibh praesent tristique.
+        </p>
       </div>
       <div class="d-none d-md-block col-md-5">
-      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height:320px; border-radius:4px;">
+        <img
+          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="height:320px; border-radius:4px;">
       </div>
-      </div>
-      <br>
+    </div>
+    <br>
     <h2 class="text-center mt-2 mb-4">
       Open Positions
     </h2>
-    <div >
+    <div>
       {% for job in jobs %}
-        {% include 'jobitem.html' %}
+      {% include 'jobitem.html' %}
       {% endfor %}
-    </div>  
-   <div style="text-align:center;"> 
+    </div>
+    <div style="text-align:center;">
       <button type="button" class="btn btn-secondary">Contact Us</button>
       <br> <br> <br>
     </div>
-      {% include 'footer.html' %}
-  </body>
+    {% include 'footer.html' %}
+</body>
+
 </html>
